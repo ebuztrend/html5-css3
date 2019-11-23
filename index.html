@@ -1,62 +1,167 @@
-<!Doctype html>
-	<head>
-		<title>Git Codblock for ebuztrend</title>
-		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
-	</head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ezike Ebuka Simple Webpage</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+		font-family: georgia, times, seriff, helvetica, verdana
+	}
+	
+	body{
+		background-image:url("https://1.bp.blogspot.com/-4vfOM4MTFpo/XdhjQOVLR1I/AAAAAAAAFEc/LIM3aKr56X4NKNgDpWTYAH55_0uPsi19ACLcBGAsYHQ/s1600/back1.jpg");
+	}
+	
+	#inner-wrapper{
+		width:940px;
+		background-color:#ffffff;
+		margin:50px auto 20px auto;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+	}
+	
+	header{
+		height:160px;
+		background-image:url("https://1.bp.blogspot.com/-Yyp9OcwY9Jc/Xdhj-A2Vi0I/AAAAAAAAFEk/cYvmDHearRYo4oYCgXP3lPpmPHkb5p9cgCLcBGAsYHQ/s1600/back2.jpg");
+		background-position:top center;
+		border-top-right-radius:10px;
+		border-top-left-radius:10px;
+	}
+	
+	ul{
+		list-style:none;
+	}
+	
+	#menu1 ul li{
+		width:234px;
+		float:left;
+		background-color:#800000;
+		margin:.5px;
+		text-align:center;
+		font-size:15px;
+		text-transform:uppercase;
+		line-height:40px;
+	}
+	
+	#menu1 ul li a{
+		display:block;
+		text-decoration:none;
+		color:#000000;
+	}
+	
+	#menu1 ul li a:hover{
+		background-color:#ffffff;
+	}
+	
+	#menu1 ul li ul li{
+		display:none;
+		margin:0px;
+	}
+	
+	#menu1 ul li:hover ul li{
+		display:block;
+	}
+	
+	#menu1{
+		position:absolute;
+	}
+	
+	#menu1 ul li ul li a{
+		margin:1px;
+	}
+	
+	#sidecontent{
+		width:190px;
+		float:right;
+		margin-top:100px;
+		margin-left:20px;
+	}
+	
+	#courses{
+		margin-top:-45px;
+		padding:10px;
+		margin-left:5px;
+	}
+	
+	#sidecontent ul li a{
+		display:block;
+		margin-top:10px;
+		padding:10px;
+		margin-left:5px;
+		text-decoration:none;
+		font-size:20px;
+		color:#800000;
+		border-bottom:1px solid #eeeeee;
+	}
+	
+	#sidecontent ul li a:hover{
+		background-color:#efefef;
+	}
+	
+	#maincontent{
+		width:700px;
+		margin:70px;
+	}
+	
+	#heading1{
+		margin-bottom:5px;
+	}
+	
+	#heading2{
+		margin-top:20px;
+		margin-bottom:5px;
+	}
+	
+	footer{
+		background-color:#800000;
+		line-height:30px;
+		padding:15px;
+		color:#ffffff;
+		text-align:center;
+		font-size:14px;
+	}
+	
+	</style>
+</head>
 <body>
-<div class="wrapper">
-	<header>
-			<nav>
+<div id="inner-wrapper">
+	<header><!--The header takes the header image--></header>
+	
+	<nav id="menu1">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a>
 				<ul>
-					<li><a href="" class="current">Home</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Code</a></li>
+					<li><a href="#">Mission</a></li>
+					<li><a href="#">Vision</a></li>
 				</ul>
-			</nav>
-	</header>
-<section class="courses">
-	<article>
-		<figure>
-			<img src="Adobe.jpg" alt="" width="300" height="200"/>
-			<figcapton>Adobe CC 2015</figcapton>
-		</figure>
-		<hgroup>
-		<h2>This is what I do best</h2>
-		<h3>This is is what I do</h3>
-		</hgroup>
-		<p>By the time you are done with this course, you should be able to create a simple webpage.</p>
-	</article>
-	<article>
-		<figure>
-			<img src="Blender.jpg" alt="" width="300" height="200"/>
-			<figcaption>Blender for Learners</figcaption>
-		</figure>
-		<hgroup>
-		<h2>This is what I do best</h2>
-		<h3>This is what I do</h3>
-		</hgroup>
-		<p>By the time you are done with this course, you should be able to create a simple webpage.</p>
-	</article>
-</section>
-	<aside>
-		<section>
-			<h2 class="boxes">POPULAR COURSES</h2>
-				<a href="">CSS</a>
-				<a href="">PHP</a>
-				<a href="">HTML</a>
-				<a href="">Javascript</a>
-		</section>
-		<section>
-			<h2 class="boxes">CONTACT</h2>
-				<p>Codblock layout.<br />
-				You can find it anywhere.<br />
-				Just Google it.</p>
-		</section>
+			</li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Policy</a></li>
+		</ul>
+	</nav>
+	
+	<aside id="sidecontent">
+		<h2 id="courses">Courses</h2>
+		<ul>
+			<li><a href="">HTML</a></li>
+			<li><a href="">CSS</a></li>
+			<li><a href="">Javascript</a></li>
+		</ul>
 	</aside>
-	<footer>
-	Git ebuztrend Codblock &copy; 2018
-	</footer>
+	
+	<main id="maincontent">
+		<h2 id="heading1">Web Tech</h2>
+		<p>By the time you are through with this course you will be able to design a simple webpage without hassle.
+		This course covers only HTML and CSS.</p>
+		<h2 id="heading2">Web Tech</h2>
+		<p>By the time you are through with this course you will be able to design a simple webpage without hassle.
+		This course covers HTML and CSS.</p>
+	</main>
+	
+	<footer>Ezike Ebuka &copy; 2019 Simple Webpage Design</footer>
+
 </div>
 </body>
 </html>
